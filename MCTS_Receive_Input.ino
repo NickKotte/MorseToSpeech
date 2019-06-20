@@ -1,6 +1,6 @@
 #include <TTS.h>
 #include <TimedAction.h>
-#include <translator.cpp>
+#include <newtrans.cpp>
 
 #define PWM 10
 #define DOT 6
