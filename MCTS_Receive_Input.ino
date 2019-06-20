@@ -1,5 +1,6 @@
 #include <TTS.h>
 #include <TimedAction.h>
+#include <translator.cpp>
 
 #define PWM 10
 #define DOT 6
@@ -11,7 +12,8 @@ String morse;
 bool spaceJustAdded;
 
 String morseToText(String morse){
-  return "";
+  translator tts(morse);
+  return tts.gettrans();
 }
 
 bool foo=true;
